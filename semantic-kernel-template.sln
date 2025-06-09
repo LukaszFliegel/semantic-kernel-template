@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perun.Api", "Perun.Api\Perun.Api.csproj", "{FBC9FACA-894E-A24D-F235-D87A1FDF02BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perun.AI", "Perun.AI\Perun.AI.csproj", "{9842E656-1314-4BAC-9EAF-71419CFC538A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBC9FACA-894E-A24D-F235-D87A1FDF02BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC9FACA-894E-A24D-F235-D87A1FDF02BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC9FACA-894E-A24D-F235-D87A1FDF02BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC9FACA-894E-A24D-F235-D87A1FDF02BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9842E656-1314-4BAC-9EAF-71419CFC538A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9842E656-1314-4BAC-9EAF-71419CFC538A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9842E656-1314-4BAC-9EAF-71419CFC538A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9842E656-1314-4BAC-9EAF-71419CFC538A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63673056-C391-4B96-824F-6273A6BAD61E}
+	EndGlobalSection
+EndGlobal
