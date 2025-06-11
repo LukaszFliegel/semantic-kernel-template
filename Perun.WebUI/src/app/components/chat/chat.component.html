@@ -1,0 +1,19 @@
+<div class="fixed bottom-4 right-4">
+    <button (click)="isVisible = !isVisible"
+        class="bg-white hover:bg-gray-200 text-white font-bold rounded-full shadow-xl border border-gray-200">
+        <img src="assistant.png" class="w-12 h-12">
+    </button>
+</div>
+
+@if (isVisible) {
+<div class="fixed bottom-8 right-20 bg-white rounded-lg shadow-xl w-1/2 border border-gray-200">
+    <main class="rounded-lg flex flex-col justify-between h-96 bg-gray-100 h-[90vh]">
+        <app-header text="Assistant" (closeClicked)="isVisible = false"></app-header>
+
+        <app-body [history]="conversation" (scroll)="onScroll($event)"></app-body>
+
+        <app-footer (attachClicked)="attachClicked($event)" (sendClicked)="sendMessage($event)"
+            [isDisabled]="isLoading"></app-footer>
+    </main>
+</div>
+}

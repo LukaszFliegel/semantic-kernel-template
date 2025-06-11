@@ -1,0 +1,31 @@
+@if (message.role === 'User') {
+<div class="flex justify-end items-start mb-2">
+    @if (message.type === 'Message') {
+    <div class="bg-blue-500 text-white p-1 px-2 rounded-lg shadow-md">
+        <span>{{ message.text }}</span>
+    </div>
+    } @else {
+    <img src="pdf.png" [title]="message.text" class="w-10 h-10 ml-1 cursor-help">
+    }
+    <img src="user.png" class="w-10 h-10 rounded-full ml-1">
+</div>
+}
+
+@if (message.role === 'Assistant') {
+<div class="flex items-start mb-2">
+    <img src="assistant.png" class="w-10 h-10 rounded-full mr-1">
+    <div class="bg-white py-1 px-2 rounded-lg shadow-md">
+        @if (message.status === 'Loading') {
+        <div class="flex items-center justify-center">
+            <div class="flex space-x-2 items-center justify-center h-6">
+                <div class="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
+                <div class="w-2 h-2 bg-blue-500 rounded-full animate-bounce delay-200"></div>
+                <div class="w-2 h-2 bg-blue-500 rounded-full animate-bounce delay-700"></div>
+            </div>
+        </div>
+        } @else {
+        <span class="text-gray-800" [innerHTML]="message.text ? convertMarkdownToHtml(message.text) : 'I\'m sorry, I\'m having trouble processing your request. Please try again later.'"></span>
+        }
+    </div>
+</div>
+}
